@@ -22,7 +22,7 @@ MawdooSearch requires:
 $ Go to mediawiki extensions folder "cd /var/www/html/my_wiki/extensions"
 $ git clone https://github.com/abu7elo/MawdooSearch.git
 $ cd /var/www/html/my_wiki/
-$ php maintenance/update.php "Create new table called favourites".
+$ php maintenance/update.php "Create new table called favorites".
 ```
 
 ### Include MawdooSearch Extension:
