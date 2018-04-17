@@ -1,0 +1,12 @@
+BEGIN;
+
+CREATE TABLE `favorites` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `user_id` INT UNSIGNED NOT NULL,
+  `a_title` VARCHAR(250) NOT NULL,
+  `a_link` VARCHAR(250) NOT NULL,
+  `a_desc` VARCHAR(250) NOT NULL,
+  `a_comment` TEXT NOT NULL,
+  `created_at` DATETIME NOT NULL,
+  PRIMARY KEY (`id`));
+COMMIT;

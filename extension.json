@@ -1,0 +1,75 @@
+{
+	"name": "MawdooSearch",
+	"version": "1.0.0",
+	"author": [
+		"Fayez Abu Hilow"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MawdooSearch",
+	"descriptionmsg": "A simple search Extension - Mawdoo3.com Task",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses": {
+		"MawdooSearchHooks":"hooks/MawdooSearch.hooks.php",
+		"SpecialMawdooSearch": "specials/SpecialMawdooSearch.php",
+		"SpecialSavedResults": "specials/SpecialSavedResults.php",
+		"MawdooSearchDeleteItemApi":"includes/MawdooSearchDeleteItemApi.php",
+		"MawdooSearchUpdateItemApi":"includes/MawdooSearchUpdateItemApi.php"
+	},
+	"SpecialPages": {
+		"MawdooSearch": "SpecialMawdooSearch",
+		"SavedResults":"SpecialSavedResults"
+	},
+	"MessagesDirs": {
+		"MawdooSearch": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles":
+	{
+		"MawdooSearchAlias":"i18n/MawdooSearch.i18n.alias.php"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "MawdooSearchHooks::onLoadExtensionSchemaUpdates",
+		"BeforePageDisplay":"MawdooSearchHooks::onBeforePageDisplay",
+		"OnSaveResults":"MawdooSearchHooks::onSaveResults",
+		"onLoadSearchResults":"MawdooSearchHooks::getSavedResults",
+		"onDownloadAsCSV":"MawdooSearchHooks::downloadAsCSV"
+	},
+	"ResourceFileModulePaths":{
+		"localBasePath": "modules",
+		"remoteExtPath": "MawdooSearch/modules"
+	},
+	"ResourceModules":{
+		"ext.mawdooSearch":{
+			"group": "ext.mawdooSearch",
+			"styles":[
+				"ext.mawdoosearch.style.css",
+				"jquery.loading.min.css"
+			],
+			"scripts":[
+				"ext.mawdoosearch.scripts.js",
+				"jquery.loading.min.js"
+			]
+
+		}
+	},
+	"APIModules":{
+		"delete_item":"MawdooSearchDeleteItemApi",
+		"update_item":"MawdooSearchUpdateItemApi"
+	},
+	"GroupPermissions": {
+		"*": {
+			"read": true,
+			"execute":false
+		},
+		"user": {
+			"read": true,
+			"execute":true
+		}
+	},
+	"AvailableRights":[
+		"read",
+		"execute"
+	],
+	"manifest_version": 1
+}

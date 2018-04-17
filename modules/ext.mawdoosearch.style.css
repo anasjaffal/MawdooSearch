@@ -1,0 +1,155 @@
+.mawdoo-search-fieldset{
+  padding: 0;
+}
+.form-control{
+  float: left;
+}
+.form-control.text{
+  width: 60%;
+}
+
+.form-control.btn{
+  width: 40%;
+}
+
+#term-textbox{
+  padding: 10px;
+  width: 78%;
+}
+
+.search-results{
+  float: left;
+  width: 100%;
+}
+
+.search-results ul{
+  margin-left: 0;
+  list-style: none;
+}
+
+.search-results ul li input[type="checkbox"]{
+  float: left;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.search-results ul li div.search-result-item{
+  padding-left: 25px;
+}
+
+.search-results ul li div.search-result-item h3 > a{
+
+  color: #1a0dab;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.search-results ul li div.search-result-item h3 > a:hover{
+  color: #B85B20;
+  text-decoration: underline;
+}
+
+input[type=submit].mawdoo-search-button{
+  background-color: #01579B;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size:16px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 8px;
+  margin: 0 10px;
+  width: 120px
+}
+
+.comment-hint{
+  color: #ff0000;
+}
+
+.form-textarea{
+  float: left;
+  background-color: #f1f2f3;
+  padding: 10px;
+  width: calc(100% - 22px);
+  border: 1px solid #9d9d9d;
+}
+
+.fullwidth{
+  width: 100%;
+}
+
+.form-actions{
+  float: right !important;
+}
+
+.form-actions button.delete-item{
+
+  padding: 5px;
+  background-color: #ff0000;
+  color: #fff;
+  margin: 0 10px;
+}
+
+
+.form-actions button.update-item{
+
+  padding: 5px;
+  background-color: #00af89;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.empty-list{
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
+
+.empty-list h2{
+  margin: 0;
+}
+
+button[type=submit].save-data{
+  width: calc( 100% - 25px );
+  padding: 10px;
+  margin: 15px 0 15px 0;
+  float: right;
+  color:#fff;
+  font-size: 16px;
+  cursor: pointer;
+
+  background-color: #3366cc;
+  color: #fff;
+  border: 1px solid #3366cc;
+  text-shadow: 0 1px rgba(0,0,0,0.1)
+}
+
+.disable-action{
+  cursor: default;
+}
+
+.search-result-item > a{
+  color:#006621;
+}
+
+.search-result-item > p{
+  color:#545454;
+  font-size: small;
+  font-family: arial,sans-serif;
+}
+
+a.download-csv{
+
+  text-align: center;
+  width: calc(100% - 45px);
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+  font-size: 16px;
+  background-color: #01579B;
+  margin-left: 25px;
+  padding: 10px;
+  border: 1px solid #cdcdcd;
+  color: #fff;
+}

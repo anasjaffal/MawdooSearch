@@ -1,0 +1,31 @@
+{
+    "@metadata": {
+        "authors": [
+            "Fayez Abu Hilow"
+        ]
+    },
+    "mawdoosearch": "Mawdoo3 - Special Search",
+    "SavedResults":"Mawdoo3 - Saved Results ",
+    "enter-your-comment":"Enter your comment",
+    "edit-your-comment":"Edit your comment",
+    "update-item":"Update",
+    "delete-item":"Delete",
+    "download-as-csv":"Download as CSV",
+    "search":"Search",
+    "check-checkbox":"You should select item to add your comment",
+    "save":"Save",
+    "login-to-save":"Login to save your results",
+    "enter-your-keyword":"Enter your keyword ",
+    "something-wrong-here":"Something wrong here",
+    "technical-issues":"Sorry, we're having some technical issues.",
+    "no-results":"No Results",
+    "no-results-body":"We searched far and wide and couldn't find any results matching your search",
+    "no-data-found":"No data found",
+    "list-is-empty":"List is empty",
+    "no-saved-body":"Looks like you have no saved items in your list.",
+    "click-here-to-add":"Click here to search and add new items",
+    "table_name":"favorites",
+    "specialpages-group-mawdoo3_group":"Mawdoo3 | Special Search Extension",
+	"mawdoosearch-desc": "Simple Extension to help Mawdoo3 team.",
+	"mawdoosearch-summary": "On this special page, you can search for any content and save your results."
+}
