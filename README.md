@@ -5,10 +5,11 @@
 MawdooSearch is a custom special pages extension for mediawiki framework.
   - Using google custom search API.
   - Allow registered user(s) to save favourite search results.
+  - Edit saved result comment.
+  - Delete saved result item.
 
 # New Features!
-
-  - N/A.
+  - Download saved results links to CSV.
 
 ### Installation
 
@@ -22,17 +23,20 @@ $ Go to mediawiki extensions folder "cd /var/www/html/my_wiki/extensions"
 $ git clone https://github.com/abu7elo/MawdooSearch.git
 $ cd /var/www/html/my_wiki/
 $ php maintenance/update.php "Create new table called favourites".
-$ Edit your LocalSettings.php file by adding the following lines at the end of file:
-   // Import MawdooSearch extension class loader.
-   require_once 'extensions/MawdooSearch/MawdooSearch.php';
-   // Load MawdooSearch extension.
-   wfLoadExtension('MawdooSearch');
-   // Google search api key.
-   $wgMawdooSearchGoogleApiKey = "AIzaSyBsPd_TDU5dWp6-vfr_EStQ-St2Ibv6sT8"; 
-   // Google search api cx key
-   $wgMawdooSearchGoogleApiCx = "000111529748108210609:takyph7nrdm";  
 ```
 
+### Include MawdooSearch Extension:
+```sh
+$ Edit your "LocalSettings.php" file by adding the following lines at the end of file:
+   "// Import MawdooSearch extension class loader."
+   require_once 'extensions/MawdooSearch/MawdooSearch.php';
+   "// Load MawdooSearch extension."
+   wfLoadExtension('MawdooSearch');
+   "// Google search api key."
+   $wgMawdooSearchGoogleApiKey = "AIzaSyBsPd_TDU5dWp6-vfr_EStQ-St2Ibv6sT8"; 
+   "// Google search api cx key"
+   $wgMawdooSearchGoogleApiCx = "000111529748108210609:takyph7nrdm"; 
+```
 ##### Now, Open your browser and navigate to your mediawiki site.
 - Go to $IP/mediawiki/index.php/Special:SpecialPages
 - At the end of page there is a new group called "Mawdoo3 | Special Search Extension" which contains to link 
@@ -40,4 +44,10 @@ $ Edit your LocalSettings.php file by adding the following lines at the end of f
  * Mawdoo3 - Special Search "Allow user to search for any topic using google custom search api".
 
 ### Example
-http://206.189.10.213/
+##### Use the following username and password to see saved results.
+###### username: admin
+###### password: f_110077
+
+- [MediaWiki Site ](http://206.189.10.213/index.php/)
+- [Search Page](http://206.189.10.213/index.php/Special:MawdooSearch)
+- [Saved Results Page](http://206.189.10.213/index.php/Special:SavedResults)
